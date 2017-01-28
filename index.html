@@ -5,13 +5,14 @@
 		<title>Walkathon Donations</title>
 	</head>
 	<body>
-		<form>
+		<form id="donationForm">
 			<fieldset>
 				First Name: <input type=text name="firstName" id="firstName">
 				Last Name: <input type=text name="lastName" id="lastName">
 				Street Address: <input type=text name="streetAddress" id="streetAddress">
 				City: <input type=text name="city" id="city">
 				State: <select name="state" id="state">
+					<option value="default" selected="selected">State</option>
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
 					<option value="AZ">Arizona</option>
@@ -67,28 +68,18 @@
 			Zip Code: <input type="text" name="zipCode" id="zipCode">
 			</fieldset>
 			<fieldset>
-				Donation Amount: <input type="number" name="donationAmount" id="donationAmount">
+				Donation Amount: <input type="text" name="donationAmount" id="donationAmount">
 				<input type="radio" name="oneTime" id="oneTime"> One Time Donation
 				<input type="radio" name="perLap" id="perLap"> Donation per Lap
 			</fieldset>
 		</form>
 		<button id="donateButton">Donate</button>
 		<button id="cancelButton">Cancel</button>
-		<table>
+		<table id="displayTable">
 			<tr>
 				<th>Firstname</th>
 				<th>Lastname</th> 
 				<th>Pledge</th>
-			</tr>
-			<tr>
-				<td>Jill</td>
-				<td>Smith</td> 
-				<td>$50</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td> 
-				<td>$100</td>
 			</tr>
 		</table>
 	<script type="text/javascript" src="javascripts/donor.js"></script>

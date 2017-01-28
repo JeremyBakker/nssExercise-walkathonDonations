@@ -1,23 +1,8 @@
+"use strict"
+
 var donate = (function(originalDonate){
 
-	var donors = [
-		{	firstName: "Jill",
-			lastName: "Smith", 
-			streetAddress: "5200 Nevada Avenue",
-			city: "Nashville",
-			state: "Tennessee",
-			zipCode: 37209,
-			pledge: 50
-		},
-		{	firstName: "Eve",
-			lastName: "Jackson",
-			streetAddress: "4603 Dakota Avenue",
-			city: "Nashville",
-			state: "Tennessee",
-			zipCode: 37209,
-			pledge: 100
-		},
-	];
+	var donors = [];
 
 	return {
 		getDonors: function(){
