@@ -1,6 +1,6 @@
 "use strict"
 
-var donate = (function(originalDonate){
+var Donate = (function(originalDonate){
 
 	var donors = [];
 
@@ -8,12 +8,12 @@ var donate = (function(originalDonate){
 		getDonors: function(){
 			return donors;
 		},
-		addDonors: function(donorArray){
-			donors.push(donorArray);
+		addDonors: function(donorObject){
+			donors.push(donorObject);
 			console.log(donors);
 		}
 	}
 
 	return originalDonate;
 
-})(donate || {});
+})(Donate || {});
