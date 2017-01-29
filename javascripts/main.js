@@ -11,7 +11,7 @@ var oneTime = document.getElementById("oneTime");
 var perLap = document.getElementById("perLap");
 var donateButton = document.getElementById("donateButton");
 var cancelButton = document.getElementById("cancelButton");
-var displayTable = document.getElementById("displayTable");
+var displayTableBody = document.getElementById("displayTableBody");
 var donationForm = document.getElementById("donationForm");
 var i = 0;
 
@@ -42,7 +42,7 @@ donateButton.addEventListener("click", function(){
 	donorObject.donationAmount = donationAmount.value;
 	donorObject.donationCycle = donationCycle;
 	Donate.addDonors(donorObject);
-	displayTable.innerHTML += 
+	displayTableBody.innerHTML += 
 		`<tr>
 			<td>${Donate.getDonors()[i].firstName}</td>
 			<td>${Donate.getDonors()[i].lastName}</td>
